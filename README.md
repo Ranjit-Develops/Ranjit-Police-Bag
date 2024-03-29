@@ -1,9 +1,10 @@
 # Ranjit-policeBag script for QB-Core
+Special Thanks to Jonzey
 
 | If you are interested in joining my community: https://discord.gg/TdDRdWpeJz
 | For Question join the Discord or add me ranjit_07
 
-| Preview:- Not Made yet
+| Preview:- https://github.com/Ranjit-Develops/Ranjit-Police-Bag
 # Information
 * A Script That Would Allow police To carry a Their Job Bag   
 
