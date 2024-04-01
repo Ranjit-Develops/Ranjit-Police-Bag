@@ -19,16 +19,16 @@ local function spawnpolicebag()
 end
 local ObjectList = {}
 
-RegisterNetEvent('Ranjit-policeBag:Client:SpawnpoliceBag', function()
+RegisterNetEvent('Ranjit-PoliceBag:Client:SpawnPoliceBag', function()
     local hash = GetHashKey('prop_cs_heist_bag_01')
     local ped = PlayerPedId()
-    local x, y, z = table.unpack(GetOffsetFromEntityInWorldCoords(ped, 0.0, 0.5, -0.7)) -- Adjusted offset
+    local x, y, z = table.unpack(GetOffsetFromEntityInWorldCoords(ped, 0.0, 0.5, -0.7))
     QBCore.Functions.LoadModel(hash)
     policebag1 = CreateObjectNoOffset(hash, x, y, z, true, false)
     SetModelAsNoLongerNeeded(hash)
-    AttachEntityToEntity(policebag1, ped, GetPedBoneIndex(ped, 57005), 0.1, 0.12, -0.08, -90.0, 0.0, 90.0, true, true, false, true, 1, true) -- Adjusted position parameters
-    spawnpolicebag()
-    TriggerServerEvent("Ranjit-policeBag:Server:RemoveItem","policebag",1)
+    AttachEntityToEntity(policebag1, ped, GetPedBoneIndex(ped, 57005), 0.05, -0.01, -0.25, -110.0, 150.0, 280.0, true, true, false, true, 1, true)
+        spawnpolicebag()
+    TriggerServerEvent("Ranjit-PoliceBag:Server:RemoveItem","policebag",1)
 end)
 
 
